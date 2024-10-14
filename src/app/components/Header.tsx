@@ -16,12 +16,12 @@ export const Header: React.FC = () => (
             if (link.href.startsWith("/")) {
               return (
                 <Link 
-                    key={key} href={link.href} passHref className="ml-6 text-sm">{link.title}
+                    key={key} href={link.href} className="ml-6 text-sm">{link.title}
                 </Link>
               );
             }
             return (
-              <a key={key} href={link.href} className="ml-6 text-sm">
+              <a key={key} href={link.href} target="_blank" rel="noopener noreferrer" className="ml-6 text-sm">
                 {link.title}
               </a>
             );

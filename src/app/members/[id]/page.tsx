@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FaTwitter, FaGithub } from "react-icons/fa";
+import { FaXTwitter, FaGithub } from "react-icons/fa6";
 import { AiOutlineLink } from "react-icons/ai";
 import { PageSEO } from "@src/app/components/PageSEO";
 import { ContentWrapper } from "@src/app/components/ContentWrapper";
@@ -41,7 +41,7 @@ const MemberPage = ({ member, postItems }: Props) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaTwitter
+                  <FaXTwitter
                     className="text-[20px]"
                     aria-label={`Follow @${twitterUsername} on Twitter`}
                   />

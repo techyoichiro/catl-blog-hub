@@ -14,12 +14,12 @@ export const config = {
         href: "/about",
       },
       {
-        title: "Company",
+        title: "CATL",
         href: "https://www.cyberagent.co.jp/careers/special/students/tech_lounge/",
       },
       {
         title: "GitHub",
-        href: "https://github.com/techyoichiro",
+        href: "https://github.com/techyoichiro/catl-blog-hub",
       },
     ],
   };
