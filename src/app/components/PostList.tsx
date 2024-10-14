@@ -22,6 +22,11 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
 
   const { hostname, origin } = new URL(link);
 
+  // hatenablog.com の場合、サブドメインを削除
+  const displayHostname = hostname.endsWith("hatenablog.com")
+    ? "hatenablog.com"
+    : hostname;
+
   return (
     <article className="rounded-lg overflow-hidden mb-4 w-full md:w-[calc(50%-0.5rem)] border border-gray-300">
       <Link href={getMemberPath(member.id)} className="flex items-center p-4 text-sm leading-5">
@@ -48,9 +53,9 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
               width={14}
               height={14}
               className="rounded-sm mr-1"
-              alt={hostname}
+              alt={displayHostname}
             />
-            {hostname}
+            {displayHostname}
           </div>
         )}
       </a>
