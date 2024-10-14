@@ -26,7 +26,7 @@ const Page: NextPage = () => {
 
       <section className="py-10">
         <ContentWrapper>
-          <h1 className="text-3xl leading-tight md:text-2xl">
+          <h1 className="text-4xl font-bold leading-tight md:text-5xl">
             {config.siteMeta.title}
           </h1>
           {!!config.siteMeta.description && (
