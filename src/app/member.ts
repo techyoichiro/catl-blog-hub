@@ -80,4 +80,16 @@ export const members: Member[] = [
     githubUsername: "MxShun",
     websiteUrl: "https://mxshun.github.io",
   },
+  {
+    id: "OmojiP",
+    name: "OmojiP",
+    role: "Game Client dev",
+    bio: "Unityやってます",
+    avatarSrc: "/avatars/omojip.jpg",
+    sources: [
+        "https://qiita.com/OmojiP/feed.atom",
+    ],
+    twitterUsername: "OmojiP",
+    websiteUrl: "https://unityroom.com/users/omojip",
+  },
 ];
