@@ -66,4 +66,18 @@ export const members: Member[] = [
     sources: ["https://note.com/55koshimu/rss"],
     twitterUsername: "55koshimu",
   },
+  {
+    id: "MxShun",
+    name: "しゅん",
+    role: "Backend dev",
+    bio: "サイバーエージェントで「極予測やりとりAI」というプロダクトの 開発責任者 / EM / スクラムマスター / バックエンドエンジニア をしています",
+    avatarSrc: "/avatars/mxshun.jpg",
+    sources: [
+        "https://qiita.com/mxshun/feed.atom",
+        "https://developers.cyberagent.co.jp/blog/archives/author/mxshun/feed",
+    ],
+    twitterUsername: "MxShun",
+    githubUsername: "MxShun",
+    websiteUrl: "https://mxshun.github.io",
+  },
 ];
