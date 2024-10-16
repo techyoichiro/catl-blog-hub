@@ -18,7 +18,7 @@ export const members: Member[] = [
     role: "Chief",
     bio: "CyberAgentのエンジニアコミュニティスペース「CA Tech Lounge」の室長と新卒エンジニア職採用マネージャーを担当しています。AtCoder茶 富山県立山町出身",
     avatarSrc: "/avatars/takarada.jpg",
-    sources: [],
+    sources: ["https://qiita.com/takarada/feed.atom"],
     twitterUsername: "y_takarada",
     websiteUrl: "https://www.cyberagent.co.jp/careers/special/students/tech_lounge/",
   },
