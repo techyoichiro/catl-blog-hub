@@ -1,22 +1,21 @@
 name: Build project daily
 
-# 定期実行のスケジュール (UTC時間で設定)
 on:
   schedule:
-    - cron: '0 0 * * *'  # 毎日00:00（UTC）に実行
+    - cron: '0 0 * * *'  # 毎日09:00（JST）に実行
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # 最新のUbuntu環境で実行
+    runs-on: ubuntu-latest
     steps:
-      # リポジトリのコードをチェックアウト
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - uses: amondnet/vercel-action@v20
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           vercel-args: "--prod"
           working-directory: ./
