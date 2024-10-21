@@ -13,16 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Node.jsをセットアップ (必要に応じてバージョン指定可能)
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: amondnet/vercel-action@v20
         with:
-          node-version: '18'  # 使用するNode.jsのバージョン
-
-      # 依存関係をインストール
-      - name: Install dependencies
-        run: npm install
-
-      # ビルドを実行
-      - name: Run build
-        run: npm run build
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+          vercel-args: "--prod"
+          working-directory: ./
