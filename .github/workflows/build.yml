@@ -7,6 +7,9 @@ on:
         description: branch|tag|SHA to checkout
         default: "main"
         required: true
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 0 * * *'  # 毎日09:00（JST）に実行
 
