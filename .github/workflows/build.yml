@@ -1,0 +1,28 @@
+name: Build project daily
+
+# 定期実行のスケジュール (UTC時間で設定)
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 毎日00:00（UTC）に実行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # 最新のUbuntu環境で実行
+    steps:
+      # リポジトリのコードをチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Node.jsをセットアップ (必要に応じてバージョン指定可能)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # 使用するNode.jsのバージョン
+
+      # 依存関係をインストール
+      - name: Install dependencies
+        run: npm install
+
+      # ビルドを実行
+      - name: Run build
+        run: npm run build
