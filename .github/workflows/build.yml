@@ -1,6 +1,12 @@
 name: Build project daily
 
 on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: branch|tag|SHA to checkout
+        default: "main"
+        required: true
   schedule:
     - cron: '0 0 * * *'  # 毎日09:00（JST）に実行
 
