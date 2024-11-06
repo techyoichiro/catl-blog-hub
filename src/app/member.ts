@@ -99,7 +99,7 @@ export const members: Member[] = [
     bio: "武蔵野大学データサイエンス学部2年 (5期生)BohPJ同好会 会計・渉外/エンジニアコミュニティいろいろに出没します。データサイエンスとプログラミングがしたいです",
     avatarSrc: "/avatars/ini0702.jpg",
     sources: [
-        "",
+        
     ],
     twitterUsername: "INI0702",
     githubUsername: "ini-muds",
@@ -111,7 +111,7 @@ export const members: Member[] = [
     bio: "アプリ開発｜JS｜TS｜Dart｜Swift｜Ruby｜Go｜React｜Next.js｜Flutter｜SwiftUI｜Rails｜アプリ甲子園'23｜Rubyプロコン'23｜CA Tech Lounge",
     avatarSrc: "/avatars/hasuro.jpg",
     sources: [
-        "",
+        
     ],
     twitterUsername: "HASURO_dev",
     githubUsername: "hasuro-R",
