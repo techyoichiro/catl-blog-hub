@@ -92,4 +92,41 @@ export const members: Member[] = [
     twitterUsername: "OmojiP",
     websiteUrl: "https://unityroom.com/users/omojip",
   },
+  {
+    id: "INI0702",
+    name: "INI",
+    role: "ML/DS",
+    bio: "武蔵野大学データサイエンス学部2年 (5期生)BohPJ同好会 会計・渉外/エンジニアコミュニティいろいろに出没します。データサイエンスとプログラミングがしたいです",
+    avatarSrc: "/avatars/ini0702.jpg",
+    sources: [
+        "",
+    ],
+    twitterUsername: "INI0702",
+    githubUsername: "ini-muds",
+  },
+  {
+    id: "HASURO",
+    name: "HASURO",
+    role: "Backend dev",
+    bio: "アプリ開発｜JS｜TS｜Dart｜Swift｜Ruby｜Go｜React｜Next.js｜Flutter｜SwiftUI｜Rails｜アプリ甲子園'23｜Rubyプロコン'23｜CA Tech Lounge",
+    avatarSrc: "/avatars/hasuro.jpg",
+    sources: [
+        "",
+    ],
+    twitterUsername: "HASURO_dev",
+    githubUsername: "hasuro-R",
+    websiteUrl: "https://hasuro.com/",
+  },
+  {
+    id: "jisyaku0521",
+    name: "じしゃく",
+    role: "Backend dev",
+    bio: "じしゃくです。プロセカのことばっかりつぶやいてる情報系高専生CATechLounge会員音ゲー(プロセカ,phigros,etc...)Pokemon UNITE：タンクメイン",
+    avatarSrc: "/avatars/jisyaku0521.jpg",
+    sources: [
+        "https://qiita.com/Shakku/feed.atom",
+    ],
+    twitterUsername: "jisyaku0521",
+    githubUsername: "Shakkuuu",
+  },
 ];
